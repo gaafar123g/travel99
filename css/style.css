@@ -91,7 +91,7 @@
     margin-right: 30px;
     padding: 25px 0;
     color: #FFFFFF;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 500;
     text-transform: uppercase;
     outline: none;
@@ -397,7 +397,7 @@
 }
 
 
-/*** Quote ***/
+/*** Quote 
 @media (min-width: 992px) {
     .container.quote {
         max-width: 100% !important;
@@ -419,9 +419,9 @@
         padding-right: calc(((100% - 1320px) / 2) + .75rem);
     }
 }
+    ***/
 
-
-/*** Team ***/
+/*** Team *
 .team-item img {
     transition: .5s;
 }
@@ -455,7 +455,7 @@
 .team-item:hover .team-social {
     left: 0;
 }
-
+    **/
 
 /*** Testimonial ***/
 .testimonial-carousel::before {
