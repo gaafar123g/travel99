@@ -49,7 +49,13 @@
 
 .btn.btn-primary,
 .btn.btn-secondary {
-    color: #FFFFFF;
+    color: #fff;
+    background: #0f2e72;
+}
+.btn.btn-primary:hover,
+.btn.btn-secondary :hover {
+    color: #fff;
+    background: #d55311;
 }
 
 .btn-square {
@@ -99,7 +105,7 @@
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
-    color: var(--primary);
+    color: #ff5702;
 }
 
 @media (max-width: 991.98px) {
@@ -119,7 +125,7 @@
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: #000;
+    color: #183266;
     font-weight: 500;
 }
 
@@ -271,7 +277,7 @@
     width: 45px;
     height: 5px;
     bottom: 0;
-    background: var(--dark);
+    background: #ff5702;
 }
 
 .section-title h1::before {
