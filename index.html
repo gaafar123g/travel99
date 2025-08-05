@@ -35,44 +35,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
 
     <style>
-        #fixedWhatsAppIcon {
-    display: block;
-    position: fixed;
-    left: 22px;
-    bottom: 180px;
-    width: 56px;
-    height: 53px;
-    background-color: #54b460;
-    text-align: center;
-    line-height: 50px;
-    color: #fff;
-    border-radius: 50%;
-    font-size: 24px;
-    z-index: 9999;
-  }
-  #fixedWhatsAppIcon:hover {
-    background-color: #339933;
-  } 
-  /*  whatsapp*/
-.whats-app {
-  position: fixed;
-  width: 55px;
-  height: 51px;
-  bottom: 109px;
-  left: 20px;
-  background-color: #237cb8;
-  color: #FFF;
-  border-radius: 50px;
-  text-align: center;
-  font-size: 30px;
-  box-shadow: 2px 2px 3px #999;
-  z-index: 100;}
-  .whats{
-    color: #fff;
-  }
-
-
-  /*  whatsapp*/
+     
+  
         /*body {
             background-color: #dfe2eb;
         }*/
@@ -85,6 +49,9 @@
        }
        h2{
         text-align: center;
+       }
+       h5{
+        font-weight: 100;
        }
     </style>
 
@@ -210,7 +177,7 @@
                             <h1 class="display-5 mb-4" style="font-family: Amiri;"> من نحن </h1>
                             <hr style="text-align:right;width:25%" />
                         </div>
-                        <h5 class="mb-4 pb-2" style="font-family: Almarai;">
+                        <h5 class="mb-4 pb-2" >
                             حنا في عفشنا بأمان شركة سعودية متخصصة في نقل وتغليف الأثاث داخل وخارج المدن. نخدم عملائنا بكل احترافية وحرص، ونضمن لهم نقل آمن وسريع بدون تعب               </h5>
                          <h5>📦 من أول فك العفش وتغليفه، لين توصيله وتركيبه – كل الشغل علينا</h5>
                         <h5>🚚 عندنا فريق متمكن وأدوات حديثة تضمن لك راحة البال وجودة الشغل</h5>
@@ -227,7 +194,31 @@
             </div>
         </div>
     </div>
+   
     <!-- About End -->
+    <section class="custom-facts" data-parallax="scroll" style="background: url('img2/slider/4.jpg') no-repeat center center/cover;">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="fact-box">
+            <span class="counter" data-target="1234">0</span>
+            <h4> عملاء سعداء </h4>
+          </div>
+          <div class="fact-box">
+            <span class="counter" data-target="1234">0</span>
+            <h4> سيارات نقل </h4>
+          </div>
+          <div class="fact-box">
+            <span class="counter" data-target="1234">0</span>
+            <h4>عدد الموظغين</h4>
+          </div>
+          <div class="fact-box">
+            <span class="counter" data-target="1234">0</span>
+            <h4>ساعات من الدعم </h4>
+          </div>
+        </div>
+      </section>
+      
+      
     <!-- Service Start -->
     
     <div class="container-xxl py-5" id="service">
@@ -552,14 +543,25 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <script>
-
-
-
-
-
-
-
-    </script>
+        const counters = document.querySelectorAll('.custom-facts .counter');
+        counters.forEach(counter => {
+          const updateCount = () => {
+            const target = +counter.getAttribute('data-target');
+            const count = +counter.innerText;
+            const speed = 80; // كلما قل الرقم زادت السرعة
+            const increment = target / speed;
+      
+            if (count < target) {
+              counter.innerText = Math.ceil(count + increment);
+              setTimeout(updateCount, 30);
+            } else {
+              counter.innerText = target;
+            }
+          };
+          updateCount();
+        });
+      </script>
+      
 </body>
 
 </html>

@@ -627,3 +627,86 @@
 .footer .copyright a:hover {
     color: var(--primary);
 }
+/*  واتساب وفون */
+#fixedWhatsAppIcon {
+    display: block;
+    position: fixed;
+    left: 22px;
+    bottom: 180px;
+    width: 56px;
+    height: 53px;
+    background-color: #54b460;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 24px;
+    z-index: 9999;
+  }
+  #fixedWhatsAppIcon:hover {
+    background-color: #339933;
+  } 
+  /*  whatsapp*/
+.whats-app {
+  position: fixed;
+  width: 55px;
+  height: 51px;
+  bottom: 109px;
+  left: 20px;
+  background-color: #237cb8;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;}
+  .whats{
+    color: #fff;
+  }
+
+
+  /*  whatsapp*/
+
+  .custom-facts {
+    position: relative;
+
+    color: #fff;
+    text-align: center;
+    padding: 60px 0;
+    overflow: hidden;
+  }
+  
+  .custom-facts .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    z-index: 1;
+  }
+  
+  .custom-facts .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .custom-facts .fact-box {
+    display: inline-block;
+    margin: 20px;
+  }
+  
+  .custom-facts .counter {
+    font-size: 48px;
+    font-weight: bold;
+  }
+  
+  .custom-facts::after {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+    background: rgba(1, 10, 53, .8);
+}
